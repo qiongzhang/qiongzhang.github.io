@@ -16,7 +16,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ol, ul, menu, dir {
 	list-style: none;
 	-webkit-padding-start: 0px;
-	line-height:1.2em;
+	font-size: 1em;
+	font-family: helvetica;
+	line-height: 1.2em;
 }
 blockquote, q {
 	quotes: none;
@@ -95,7 +97,7 @@ a {
 	-moz-transition: color .1s ease-in-out;
 	-webkit-transition: color .1s ease-in-out;
 	-o-transition: color .1s ease-in-out;
-	
+
 }
 a:hover {
 	color: #2F4F4F  ;
@@ -107,12 +109,10 @@ a:hover {
 
 div.picture-left {
 	float: left;
-	height: auto; 
-	    width: auto; 
+	height: auto;
+	    width: auto;
 	max-height: 200px;
 	max-width: 200px;
 	overflow: hidden;
 	margin-right: 1em
 }
-
-
