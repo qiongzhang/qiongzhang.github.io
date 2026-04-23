@@ -1,0 +1,731 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"a852971bae",applicationID:"205519541",browserID:"205528960"};;/*! For license information please see nr-loader-rum-1.303.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,WN:()=>u,bv:()=>a,gm:()=>o,mw:()=>s,sb:()=>d});var n=r(863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===o?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)())},163:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(384),i=r(741);var a=r(555);r(860).K7.genericEvents;const o="experimental.resources",s="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(614),u=r(944),l=r(122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(s)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,u.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,u.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,u.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},spa:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(154),h=r(324);let m=0;const v={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:p.WN},b={consented:!1},y={appMetadata:{},get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:void 0,disabled:!1,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++m}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)};var w=r(701);const x=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var S=r(836),k=r(241);const R={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,R),T=new Set;function E(e,t={},r,o){let{init:s,info:c,loader_config:d,runtime:u={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();s=e.init,c=e.info,d=e.loader_config}e.init=g(s||{}),e.loader_config=A(d||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,a.D)(c);const f=e.init,h=[c.beacon,c.errorBeacon];T.has(e.agentIdentifier)||(f.proxy.assets&&(x(f.proxy.assets),h.push(f.proxy.assets)),f.proxy.beacon&&h.push(f.proxy.beacon),e.beacons=[...h],function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let a=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return a?a(...t):n})})}(e),(0,n.US)("activatedFeatures",w.B),e.runSoftNavOverSpa&&=!0===f.soft_navigations.enabled&&f.feature_flags.includes("soft_nav")),u.denyList=[...f.ajax.deny_list||[],...f.ajax.block_internal?h:[]],u.ptid=e.agentIdentifier,u.loaderType=r,e.runtime=_(u),T.has(e.agentIdentifier)||(e.ee=S.ee.get(e.agentIdentifier),e.exposed=l,(0,k.W)({agentIdentifier:e.agentIdentifier,drained:!!w.B?.[e.agentIdentifier],type:"lifecycle",name:"initialize",feature:void 0,data:e.config})),T.add(e.agentIdentifier)}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(836),i=r(687);class a{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(154);const i="newrelic";function a(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>d,BL:()=>s,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>m,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>a,V1:()=>S,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>h,o5:()=>u});const n="api-",i="addPageAction",a="addToTrace",o="addRelease",s="finished",c="interaction",d="log",u="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",h="setApplicationVersion",m="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",S="measure",k="consent"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>a,Qr:()=>s,sB:()=>o});var n=r(878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.sp)("load",e,t)}function o(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}function s(e){if(i())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>a,xv:()=>n});const n="1.303.0",i="PROD",a="CDN"},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>s,bQ:()=>d,dV:()=>c,pV:()=>l});var n=r(154),i=r(863),a=r(910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function s(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function c(){let e=s();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function d(e,t){let r=s();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e,t){s()[e]=t}function l(){return function(){let e=s();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=s();const t=e.init||{};e.init={...t}}(),c(),function(){let e=s();const t=e.loader_config||{};e.loader_config={...t}}(),s()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>s,f:()=>o});var n=r(384),i=r(122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const s=e=>(0,i.a)(e,a)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(908);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.d,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>a});const n="NRBA",i="SESSION",a=144e5,o=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>d,Ze:()=>f,x3:()=>u});var n=r(241),i=r(836),a=r(606),o=r(860),s=r(646);const c={};function d(e,t){const r={staged:!1,priority:o.P3[t]||0};l(e),c[e].get(t)||c[e].set(t,r)}function u(e,t){e&&c[e]&&(c[e].get(t)&&c[e].delete(t),p(e,t,!1),c[e].size&&g(e))}function l(e){if(!e)throw new Error("agentIdentifier required");c[e]||(c[e]=new Map)}function f(e="",t="feature",r=!1){if(l(e),!e||!c[e].get(t)||r)return p(e,t);c[e].get(t).staged=!0,g(e)}function g(e){const t=Array.from(c[e]);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{c[e].delete(t),p(e,t)}))}function p(e,t,r=!0){const o=e?i.ee.get(e):i.ee,c=a.i.handlers;if(!o.aborted&&o.backlog&&c){if((0,n.W)({agentIdentifier:e,type:"lifecycle",name:"drain",feature:t}),r){const e=o.backlog[t],r=c[t];if(r){for(let t=0;e&&t<e.length;++t)h(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0]?.context()instanceof s.y&&t[0].on(e,t[1])})})}}o.isolatedBacklog||delete c[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function h(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>a,KC:()=>s,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,a=1e6,o="SESSION_ERROR",s={[n.K7.logging]:!0,[n.K7.genericEvents]:!1,[n.K7.jserrors]:!1,[n.K7.ajax]:!1}},701:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,t:()=>o});var n=r(241);const i=new Set,a={};function o(e,t){const r=t.agentIdentifier;a[r]??={},e&&"object"==typeof e&&(i.has(r)||(t.ee.emit("rumresp",[e]),a[r]=e,i.add(r),(0,n.W)({agentIdentifier:r,loaded:!0,drained:!0,type:"lifecycle",name:"load",feature:void 0,data:e})))}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e){return this.#e(i.Dl,e)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},773:(e,t,r)=>{"use strict";r.d(t,{z_:()=>a,XG:()=>s,TZ:()=>n,rs:()=>i,xV:()=>o});r(154),r(566),r(384);const n=r(860).K7.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>s,ee:()=>c});var n=r(384),i=r(990),a=r(646),o=r(607);const s="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var s=g(n);h(e).forEach(e=>{e.apply(s,r)});var d=v()[o[e]];d&&d.push([f,e,r,s]);return s},get:m,listeners:h,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,s,()=>new a.y(s)):new a.y(s)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>u,K7:()=>c,P3:()=>d,XX:()=>i,Yy:()=>s,df:()=>a,qY:()=>n,v4:()=>o});const n="events",i="jserrors",a="browser/blobs",o="rum",s="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},d={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.spa]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.softNav]:8,[c.sessionReplay]:9,[c.logging]:10,[c.genericEvents]:11},u={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.spa]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:a,[c.sessionReplay]:a,[c.logging]:s,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e&&e.toString().includes("[native code]");return t||(0,n.R)(64,e?.name||e?.toString()),i.set(e,t),t})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({agentIdentifier:null,drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.303.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.303.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={296:"sha512-DjFbtykbDCyUDGsp+l/dYhH0LhW/Jv9sDnc+aleTRmpV1ZRfyOeip4Sv4USz3Fk0DZCWshsM7d24cTr9Xf3L/A=="};(s=document.createElement("script")).charset="utf-8",i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,d=0;if(o.some(t=>0!==e[t])){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.303.0.PROD"]=self["webpackChunk:NRBA-1.303.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(566),t=i(741);class r extends t.W{agentIdentifier=(0,e.LA)(16)}var n=i(860);const a=Object.values(n.K7);var o=i(163);var s=i(908),c=i(863),d=i(261),u=i(241),l=i(944),f=i(701),g=i(773);function p(e,t,i,a){const o=a||i;!o||o[e]&&o[e]!==r.prototype[e]||(o[e]=function(){(0,s.p)(g.xV,["API/"+e+"/called"],void 0,n.K7.metrics,i.ee),(0,u.W)({agentIdentifier:i.agentIdentifier,drained:!!f.B?.[i.agentIdentifier],type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,l.R)(23,e)}})}function h(e,t,r,n,i){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(i||null===r)&&(0,s.p)(d.Pl+n,[(0,c.t)(),t,r],void 0,"session",e.ee)}var m=i(687),v=i(234),b=i(289),y=i(154),_=i(384);const w=e=>y.RI&&!0===e?.privacy.cookies_enabled;function x(e){return!!(0,_.dV)().o.MO&&w(e)&&!0===e?.session_trace.enabled}var S=i(389),k=i(699);class R extends v.W{constructor(e,t){super(e.agentIdentifier,t),this.agentRef=e,this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,S.J)(()=>{(0,m.Ak)(e.agentIdentifier,this.featureName),t()}))}):(0,m.Ak)(e.agentIdentifier,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(w(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,305));n=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(k.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,m.Ze)(this.agentIdentifier,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,m.Ze)(this.agentIdentifier,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};y.RI?(0,b.GG)(()=>n(),!0):n()}#t(e,t,r){if(this.blocked)return!1;switch(e){case n.K7.sessionReplay:return x(r)&&!!t;case n.K7.sessionTrace:return!!t;default:return!0}}}var A=i(630),T=i(614);class E extends R{static featureName=A.T;constructor(e){var t;super(e,A.T),this.setupInspectionEvents(e.agentIdentifier),t=e,p(d.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(d.Pl+d.Fw,[(0,c.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,108)))}setupInspectionEvents(e){const t=(t,r)=>{t&&(0,u.W)({agentIdentifier:e,timeStamp:t.timeStamp,loaded:"complete"===t.target.readyState,type:"window",name:r,data:t.target.location+""})};(0,b.sB)(e=>{t(e,"DOMContentLoaded")}),(0,b.GG)(e=>{t(e,"load")}),(0,b.Qr)(e=>{t(e,"navigate")}),this.ee.on(T.tS.UPDATE,(t,r)=>{(0,u.W)({agentIdentifier:e,type:"lifecycle",name:"session",data:r})})}}var N=i(843),j=i(878),I=i(782);class P extends R{static featureName=I.T;constructor(e){super(e,I.T),y.RI&&((0,N.u)(()=>(0,s.p)("docHidden",[(0,c.t)()],void 0,I.T,this.ee),!0),(0,j.sp)("pagehide",()=>(0,s.p)("winPagehide",[(0,c.t)()],void 0,I.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,350))))}}class O extends R{static featureName=g.TZ;constructor(e){super(e,g.TZ),y.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(g.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new class extends r{constructor(e){var t;(super(),y.gm)?(this.features={},(0,_.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(E),this.runSoftNavOverSpa=[...this.desiredFeatures].some(e=>e.featureName===n.K7.softNav),(0,o.j)(this,e,e.loaderType||"agent"),t=this,p(d.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return h(t,e,r,d.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){p(d.Dl,function(t){if("string"==typeof t||null===t)return h(e,"enduser.id",t,d.Dl,!0);(0,l.R)(41,typeof t)},e)}(this),function(e){p(d.nb,function(t){if("string"==typeof t||null===t)return h(e,"application.version",t,d.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){p(d.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){p(d.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(d.Pl+d.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,l.R)(65,typeof t)},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return a.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),t=[...this.desiredFeatures];t.sort((e,t)=>n.P3[e.featureName]-n.P3[t.featureName]),t.forEach(t=>{if(!e[t.featureName]&&t.featureName!==n.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&t.featureName===n.K7.spa)return;if(!this.runSoftNavOverSpa&&t.featureName===n.K7.softNav)return;const r=function(e){switch(e){case n.K7.ajax:return[n.K7.jserrors];case n.K7.sessionTrace:return[n.K7.ajax,n.K7.pageViewEvent];case n.K7.sessionReplay:return[n.K7.sessionTrace];case n.K7.pageViewTiming:return[n.K7.pageViewEvent];default:return[]}}(t.featureName).filter(e=>!(e in this.features));r.length>0&&(0,l.R)(36,{targetFeature:t.featureName,missingDependencies:r}),this.features[t.featureName]=new t(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,_.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}({features:[E,P,O],loaderType:"lite"})})()})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--GA4 for Network-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYY85J4EN8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZYY85J4EN8');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TML9HWS');</script>
+<!-- End Google Tag Manager -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#cc0033">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Home - Memory Optimization Lab</title>
+	<link rel="canonical" href="https://sites.rutgers.edu/memory-optimization-lab/" class="yoast-seo-meta-tag" />
+	<meta property="og:locale" content="en_US" class="yoast-seo-meta-tag" />
+	<meta property="og:type" content="website" class="yoast-seo-meta-tag" />
+	<meta property="og:title" content="Home - Memory Optimization Lab" class="yoast-seo-meta-tag" />
+	<meta property="og:url" content="https://sites.rutgers.edu/memory-optimization-lab/" class="yoast-seo-meta-tag" />
+	<meta property="og:site_name" content="Memory Optimization Lab" class="yoast-seo-meta-tag" />
+	<meta property="article:modified_time" content="2024-08-27T21:00:14+00:00" class="yoast-seo-meta-tag" />
+	<meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://sites.rutgers.edu/memory-optimization-lab/","url":"https://sites.rutgers.edu/memory-optimization-lab/","name":"Home - Memory Optimization Lab","isPartOf":{"@id":"https://sites.rutgers.edu/memory-optimization-lab/#website"},"datePublished":"2020-07-13T18:18:38+00:00","dateModified":"2024-08-27T21:00:14+00:00","breadcrumb":{"@id":"https://sites.rutgers.edu/memory-optimization-lab/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://sites.rutgers.edu/memory-optimization-lab/"]}]},{"@type":"BreadcrumbList","@id":"https://sites.rutgers.edu/memory-optimization-lab/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://sites.rutgers.edu/memory-optimization-lab/#website","url":"https://sites.rutgers.edu/memory-optimization-lab/","name":"Memory Optimization Lab","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://sites.rutgers.edu/memory-optimization-lab/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//sites.rutgers.edu' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='dashicons-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-includes/css/dashicons.min.css?ver=6.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-includes/css/admin-bar.min.css?ver=6.6.2' type='text/css' media='all' />
+<style id='admin-bar-inline-css' type='text/css'>
+
+		@media screen { html { margin-top: 32px !important; } }
+		@media screen and ( max-width: 782px ) { html { margin-top: 46px !important; } }
+	
+@media print { #wpadminbar { display:none; } }
+</style>
+<link rel='stylesheet' id='tribe-events-admin-menu-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/the-events-calendar/src/resources/css/admin-menu.min.css?ver=6.7.0' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpdreams-asl-basic-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/css/style.basic.css?ver=4.12.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdreams-asl-instance-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/css/style-simple-red.css?ver=4.12.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sage/css-css' href='https://sites.rutgers.edu/memory-optimization-lab/wp-content/themes/rusites/dist/styles/main.css?ver=1.2.0' type='text/css' media='all' />
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://sites.rutgers.edu/memory-optimization-lab/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://sites.rutgers.edu/memory-optimization-lab/wp-json/wp/v2/pages/487" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sites.rutgers.edu/memory-optimization-lab/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.2" />
+<link rel='shortlink' href='https://sites.rutgers.edu/memory-optimization-lab/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://sites.rutgers.edu/memory-optimization-lab/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsites.rutgers.edu%2Fmemory-optimization-lab%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://sites.rutgers.edu/memory-optimization-lab/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsites.rutgers.edu%2Fmemory-optimization-lab%2F&#038;format=xml" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://sites.rutgers.edu/memory-optimization-lab"><link rel="alternate" href="https://sites.rutgers.edu/memory-optimization-lab/wp-json/tribe/events/v1/" />
+<!-- CSS Automatic Override Styles via selected Customize-specific options -->
+<style type="text/css">
+  body>header>.container:nth-child(2),
+  body>header {
+    background-color: #1F1F1F !important;
+  }
+
+  body>header>.navigation-bar {
+    background-color: #333333 !important;
+  }
+
+  #rutgers-logo g#label-rutgers .rutgers-logo__primary {
+    fill: #FFFFFF  }
+
+  .logo span.site-title {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+
+  #rutgers-logo g#label-school .rutgers-logo__secondary {
+    fill: #FFFFFF;
+  }
+
+  .pre-header {
+    background-color: #000000  }
+
+</style>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link rel="preload" as="style" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+				<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" media="all" />
+							            <style>
+				            
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+						font-size: 0px !important;
+						color: rgba(0, 0, 0, 0);
+					}
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+						font-size: 11px !important;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 1;
+					}
+					.asl_w_container {
+						width: 100%;
+						margin: 0px 0px 0px 0px;
+						min-width: 200px;
+					}
+					div[id*='ajaxsearchlite'].asl_m {
+						width: 100%;
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+						font-weight: bold;
+						color: rgba(217, 49, 43, 1);
+						background-color: rgba(238, 238, 238, 1);
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results .results img.asl_image {
+						width: 70px;
+						height: 70px;
+						object-fit: cover;
+					}
+					div.asl_r .results {
+						max-height: auto;
+					}
+				
+						div.asl_r.asl_w.vertical .results .item::after {
+							display: block;
+							position: absolute;
+							bottom: 0;
+							content: '';
+							height: 1px;
+							width: 100%;
+							background: #D8D8D8;
+						}
+						div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+							display: none;
+						}
+								            </style>
+			            <link rel="icon" href="https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2018/01/android-chrome-192x192-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2018/01/android-chrome-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2018/01/android-chrome-192x192.png" />
+<meta name="msapplication-TileImage" content="https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2018/01/android-chrome-192x192.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+  
+<body class="home page-template page-template-template-custom page-template-template-custom-php page page-id-487 logged-in admin-bar no-customize-support tribe-no-js">
+  <!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TML9HWS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!--[if IE]>
+<div class="alert alert-warning">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
+    browser</a> to improve your experience.</div>
+<![endif]-->
+  <a href="#main-content" class="screen-reader-text">Skip to main content</a>
+<div class="mobile-overlay"></div>
+<header class="banner site-banner theme-color--gray" role="banner">
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+				<nav>
+  <div class="menu-top-container"><ul id="menu-top" class="global-links"><li><a href='https://rutgers.edu/' target='_blank'>Rutgers.edu</a></li><li><a href='https://search.rutgers.edu/' target='_blank'>Rutgers Search</a></li></ul></div></nav>
+
+
+                <div class="social-media">
+					                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="logo_and_header" style="display: flex; align-items: center;">
+            <div class="logo" style="display: contents">
+				
+                <div class="logo-rutgers">
+                    <defs>
+                        <style>
+                                                        .R-fill {
+                                fill: #cd0533;
+                            }
+
+                            .R-outline {
+                                fill: white;
+                            }
+
+                            .line {
+                                fill: white;
+                            }
+
+                            .letters {
+                                fill: white;
+                            }
+
+                            
+                        </style>
+                    </defs>
+					                        <a
+                                class="logo-rutgers__link" href="https://www.rutgers.edu/" title="Go to Rutgers University homepage"
+                                aria-label="Go to Rutgers University homepage"
+                        >
+
+                            <svg id="block-r" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 169.7 150" xml:space="preserve">
+
+            <path
+                    class="R-fill" d="M121.1,78.2l2.4-0.9c19.9-7.5,29.5-18.8,29.5-34.5c0-10.9-4.4-19.8-13.3-27.2c-9.5-7.7-22.6-11.6-38.9-11.6
+            c0,0-93,0-96.9,0v20.6c0.6,0,4.9,0,11.3,0v101H3.9v20.6H70v-20.6H58.3V82h24l27.4,43.5H94.3v20.6h71.5v-20.6h-13.5L121.1,78.2z
+             M102.2,56.5L102.2,56.5c-5.2,4-12.7,6-22.4,6H58.3v-38c14.6,0,26.5,0,26.5,0c8.3,0,14.7,2.3,19.1,6.9c3.2,3.2,4.8,7.2,4.8,11.9
+            C108.8,48.4,106.6,52.8,102.2,56.5L102.2,56.5z"
+            />
+                                <g class="R-outline">
+                                    <path
+                                            d="M84.8,24.5H58.3v38h21.5c9.7,0,17.3-2,22.4-6l0.1,0c4.3-3.6,6.5-8.1,6.5-13.2c0-4.7-1.6-8.7-4.8-11.9
+              C99.5,26.8,93.1,24.5,84.8,24.5L84.8,24.5z M99.8,53.4L99.8,53.4c-4.4,3.4-11.1,5.2-20,5.2H62.2V28.4h22.6c7.2,0,12.7,1.9,16.3,5.7
+              l0.1,0.1c2.5,2.5,3.7,5.4,3.7,9.1C104.9,47.2,103.2,50.5,99.8,53.4L99.8,53.4z"
+                                    />
+                                    <path
+                                            d="M154.4,121.6L127,80.1c19.8-8.1,29.9-20.6,29.9-37.3c0-12.1-4.8-22-14.8-30.2C131.9,4.2,118,0,100.8,0H0v28.4h11.3v93.2H0
+              V150h73.9v-28.4H62.2V85.9h17.9l22.5,35.7H90.3V150h79.3v-28.4H154.4z M165.8,146.1H94.3v-20.6h15.4L82.3,82H58.3v43.5H70v20.6H3.9
+              v-20.6h11.3v-101H3.9V3.9h96.9c16.3,0,29.4,3.9,38.9,11.6c9,7.4,13.3,16.3,13.3,27.2c0,15.8-9.6,27.1-29.5,34.5l-2.4,0.9l31.2,47.3
+              h13.5L165.8,146.1L165.8,146.1z"
+                                    />
+                                </g>
+              </svg>
+
+                            <svg id="block-r-rutgers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.38 60">
+
+                                <path
+                                        class="R-fill"
+                                        d="m48.28,31.28l.95-.36c7.91-2.98,11.75-7.48,11.75-13.77,0-4.35-1.74-7.9-5.32-10.85-3.79-3.07-9-4.63-15.49-4.63,0,0-37.05,0-38.61,0v8.21c.24,0,1.96,0,4.5,0v40.26H1.57v8.19h26.33v-8.19h-4.65v-17.35h9.55l10.92,17.35h-6.14v8.19h28.51v-8.19h-5.39l-12.42-18.87Zm-7.52-8.66l-.02.02c-2.03,1.59-5.03,2.39-8.91,2.39h-8.56v-15.14c5.84,0,10.56,0,10.56,0,3.3,0,5.87.93,7.62,2.73,1.28,1.26,1.92,2.86,1.92,4.75,0,2.03-.88,3.8-2.6,5.25h0Z"
+                                />
+                                <g class="R-outline">
+                                    <path d="m33.82,9.89h-10.56s0,15.14,0,15.14h8.57c3.88,0,6.88-.81,8.91-2.39l.02-.02c1.73-1.45,2.6-3.22,2.6-5.25,0-1.89-.65-3.48-1.92-4.75-1.75-1.81-4.32-2.73-7.62-2.73h0Zm5.96,11.52h0c-1.75,1.37-4.43,2.07-7.95,2.07h-7.01v-12.03h9.01c2.86,0,5.05.76,6.5,2.26l.02.02c.98.98,1.46,2.17,1.46,3.64,0,1.56-.66,2.88-2.02,4.04h0Z"/>
+                                    <path d="m61.54,48.59l-10.89-16.55c7.9-3.21,11.9-8.21,11.9-14.89,0-4.84-1.92-8.78-5.89-12.05C52.57,1.8,47.03.13,40.18.13H.01S.01,11.44.01,11.44h4.5v37.16H.01v11.31h29.45v-11.31h-4.65v-14.23h7.13l8.96,14.23h-4.88v11.31h31.63v-11.31h-6.11Zm4.55,9.75h-28.51v-8.19h6.14l-10.92-17.35h-9.55v17.35h4.65v8.19H1.57v-8.19h4.5V9.89H1.57V1.68h38.61c6.49,0,11.7,1.56,15.49,4.63,3.58,2.95,5.32,6.49,5.32,10.84,0,6.28-3.84,10.79-11.75,13.77l-.95.36,12.42,18.87h5.39v8.19Z"/>
+                                </g>
+                                <rect class="line" x="78.96" y=".12" width="1.56" height="59.78"/>
+                                <g class="letters">
+                                    <path d="m101.55,40.07c-.77-1.32-1.09-1.87-1.87-3.27-1.98-3.59-2.58-4.56-3.3-4.88-.2-.09-.37-.14-.63-.17v8.32h-3.93v-19.94h7.43c3.53,0,5.85,2.35,5.85,5.85,0,2.98-1.98,5.45-4.45,5.51.4.32.57.49.83.83,1.03,1.29,4.08,6.49,4.79,7.75h-4.73Zm-2.09-16.44c-.46-.17-1.29-.29-2.27-.29h-1.43v5.4h1.35c1.72,0,2.47-.17,3.01-.66.49-.46.77-1.18.77-2.01,0-1.23-.49-2.09-1.43-2.44Z"/>
+                                    <path d="m122.1,36.68c-.52,1.58-2.47,3.76-6.77,3.76-3.04,0-5.28-.92-6.4-2.67-.66-1.03-.86-1.84-.86-3.76v-13.89h4.1v13.11c0,1.23.11,1.95.34,2.38.46.89,1.41,1.38,2.73,1.38,1.75,0,2.87-.86,3.04-2.32.06-.43.06-.72.06-1.78v-12.77h4.08v13.43c0,1.89-.03,2.27-.32,3.13Z"/>
+                                    <path d="m138.15,23.46h-4.76v16.62h-4.07v-16.62h-4.88v-3.33h14.38l-.66,3.33Z"/>
+                                    <path d="m147.77,40.3c-2.98,0-5.19-.98-6.8-3.04-1.46-1.87-2.12-3.99-2.12-6.97,0-4.22,1.38-7.2,4.16-9.07,1.46-.98,2.96-1.41,4.85-1.41,2.41,0,4.59.77,6.34,2.3l-2.12,2.5c-1.29-1.06-2.64-1.55-4.16-1.55-1.18,0-2.18.34-2.87,1-1.35,1.29-1.69,3.44-1.69,6.43s.49,4.68,1.49,5.68c.75.72,1.84,1.12,3.13,1.12.89,0,1.61-.14,2.27-.49v-4.53h-3.04l-.52-3.27h7.72v9.53c-2.04,1.21-4.28,1.78-6.63,1.78Z"/>
+                                    <path d="m157.35,40.07v-19.94h11.36l-.52,3.27h-6.77v4.62h5.65v3.27h-5.65v5.34h7.55v3.44h-11.62Z"/>
+                                    <path d="m181.22,40.07c-.77-1.32-1.09-1.87-1.87-3.27-1.98-3.59-2.58-4.56-3.3-4.88-.2-.09-.37-.14-.63-.17v8.32h-3.93v-19.94h7.43c3.53,0,5.85,2.35,5.85,5.85,0,2.98-1.98,5.45-4.45,5.51.4.32.57.49.83.83,1.03,1.29,4.08,6.49,4.79,7.75h-4.73Zm-2.09-16.44c-.46-.17-1.29-.29-2.27-.29h-1.43v5.4h1.35c1.72,0,2.47-.17,3.01-.66.49-.46.77-1.18.77-2.01,0-1.23-.49-2.09-1.43-2.44Z"/>
+                                    <path d="m193.41,40.5c-2.27,0-4.79-.66-6.8-1.81l1.49-3.13c1.87.98,3.47,1.61,5.48,1.61,2.3,0,3.5-.95,3.5-2.73,0-1.29-.83-2.09-2.61-2.58l-2.21-.6c-1.98-.55-3.21-1.32-3.93-2.53-.55-.89-.83-1.92-.83-3.04,0-3.64,2.93-6.17,7.15-6.17,2.44,0,4.91.75,6.66,2.01l-1.89,2.87c-1.81-1.09-3.16-1.52-4.65-1.52-1.64,0-2.78.95-2.78,2.3,0,1.03.55,1.55,2.21,2.01l2.41.66c3.27.89,5.05,2.98,5.05,5.94,0,4.05-3.27,6.72-8.24,6.72Z"/>
+                                </g>
+                            </svg>
+                        </a>
+					                </div>
+                <span class="site-title">
+                					                        <a class="site-title__school-link" href="https://newbrunswick.rutgers.edu" title="Go to Rutgers University-New Brunswick homepage" aria-label="Go to Rutgers University-New Brunswick homepage">
+                        Rutgers University-New Brunswick                    </a>
+					
+                <a class="site-title__site-link" href="https://sites.rutgers.edu/memory-optimization-lab/" title="Go to Memory Optimization Lab homepage" aria-label="Go to Memory Optimization Lab homepage">
+                    Memory Optimization Lab                </a>
+            </span>
+            </div>
+			        </div>
+
+    </div>
+    <div class="navigation-bar">
+        <div class="container">
+
+            <div class="mobile-menu"><i class="fas fa-bars"></i> Menu</div>
+            <nav class="nav-primary row">
+				<div class="menu-header-menu-container"><ul id="menu-header-menu" class="nav"><li id="menu-item-495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-487 current_page_item menu-item-495"><a href="https://sites.rutgers.edu/memory-optimization-lab/" aria-current="page">Home</a></li>
+<li id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="https://sites.rutgers.edu/memory-optimization-lab/our-team/">People</a></li>
+<li id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-667"><a href="https://sites.rutgers.edu/memory-optimization-lab/research/">Research</a></li>
+<li id="menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-579"><a href="https://sites.rutgers.edu/memory-optimization-lab/publications/">Publications</a></li>
+<li id="menu-item-580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580"><a href="https://sites.rutgers.edu/memory-optimization-lab/join-us/">Join Us</a></li>
+<li id="menu-item-952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-952"><a href="https://sites.rutgers.edu/memory-optimization-lab/lab-news-2/">Lab News</a></li>
+</ul></div>                <div id="search-button">
+                    <a id="search-toggle" href="#"><i class="fas fa-search"></i>
+                        <div class="sr-only">Open Search Input</div>
+                    </a>
+                </div>
+                <div class="header-search-form closed">
+					<div class="asl_w_container asl_w_container_1">
+	<div id='ajaxsearchlite1'
+		 data-id="1"
+		 data-instance="1"
+		 class="asl_w asl_m asl_m_1 asl_m_1_1">
+		<div class="probox">
+
+	
+	<div class='prosettings'  data-opened=0>
+				<div class='innericon'>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<polygon transform = "rotate(90 256 256)" points="142.332,104.886 197.48,50 402.5,256 197.48,462 142.332,407.113 292.727,256 "/>
+				</svg>
+		</div>
+	</div>
+
+	
+	
+	<div class='proinput'>
+        <form role="search" action='#' autocomplete="off"
+			  aria-label="Search form">
+			<input aria-label="Search input"
+				   type='search' class='orig'
+				   tabindex="0"
+				   name='phrase'
+				   placeholder='Search here..'
+				   value=''
+				   autocomplete="off"/>
+			<input aria-label="Search autocomplete input"
+				   type='text'
+				   class='autocomplete'
+				   tabindex="-1"
+				   name='phrase'
+				   value=''
+				   autocomplete="off" disabled/>
+			<input type='submit' value="Start search" style='width:0; height: 0; visibility: hidden;'>
+		</form>
+	</div>
+
+	
+	
+	<button class='promagnifier' tabindex="0" aria-label="Search magnifier button">
+				<span class='innericon' style="display:block;">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="22" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+					<path d="M460.355,421.59L353.844,315.078c20.041-27.553,31.885-61.437,31.885-98.037
+						C385.729,124.934,310.793,50,218.686,50C126.58,50,51.645,124.934,51.645,217.041c0,92.106,74.936,167.041,167.041,167.041
+						c34.912,0,67.352-10.773,94.184-29.158L419.945,462L460.355,421.59z M100.631,217.041c0-65.096,52.959-118.056,118.055-118.056
+						c65.098,0,118.057,52.959,118.057,118.056c0,65.096-52.959,118.056-118.057,118.056C153.59,335.097,100.631,282.137,100.631,217.041
+						z"/>
+				</svg>
+		</span>
+	</button>
+
+	
+	
+	<div class='proloading'>
+
+		<div class="asl_loader"><div class="asl_loader-inner asl_simple-circle"></div></div>
+
+			</div>
+
+			<div class='proclose'>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+				 y="0px"
+				 width="12" height="12" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+				 xml:space="preserve">
+				<polygon points="438.393,374.595 319.757,255.977 438.378,137.348 374.595,73.607 255.995,192.225 137.375,73.622 73.607,137.352 192.246,255.983 73.622,374.625 137.352,438.393 256.002,319.734 374.652,438.378 "/>
+			</svg>
+		</div>
+	
+	
+</div>	</div>
+	<div class='asl_data_container' style="display:none !important;">
+		<div class="asl_init_data wpdreams_asl_data_ct"
+	 style="display:none !important;"
+	 id="asl_init_id_1"
+	 data-asl-id="1"
+	 data-asl-instance="1"
+	 data-asldata="ew0KCSJob21ldXJsIjogImh0dHBzOi8vc2l0ZXMucnV0Z2Vycy5lZHUvbWVtb3J5LW9wdGltaXphdGlvbi1sYWIvIiwNCgkicmVzdWx0c3R5cGUiOiAidmVydGljYWwiLA0KCSJyZXN1bHRzcG9zaXRpb24iOiAiaG92ZXIiLA0KCSJpdGVtc2NvdW50IjogNCwNCgkiY2hhcmNvdW50IjogIDAsDQoJImhpZ2hsaWdodCI6IDAsDQoJImhpZ2hsaWdodHdob2xld29yZHMiOiAxLA0KCSJzaW5nbGVIaWdobGlnaHQiOiAwLA0KCSJzY3JvbGxUb1Jlc3VsdHMiOiB7DQoJCSJlbmFibGVkIjogMCwNCgkJIm9mZnNldCI6IDANCgl9LA0KCSJyZXN1bHRhcmVhY2xpY2thYmxlIjogMSwNCgkiYXV0b2NvbXBsZXRlIjogew0KCQkiZW5hYmxlZCIgOiAxLA0KCQkibGFuZyIgOiAiZW4iLA0KCQkidHJpZ2dlcl9jaGFyY291bnQiIDogMA0KCX0sDQoJIm1vYmlsZSI6IHsNCgkJIm1lbnVfc2VsZWN0b3IiOiAiI21lbnUtdG9nZ2xlIg0KCX0sDQoJInRyaWdnZXIiOiB7DQoJCSJjbGljayI6ICJhamF4X3NlYXJjaCIsDQoJCSJjbGlja19sb2NhdGlvbiI6ICJzYW1lIiwNCgkJInVwZGF0ZV9ocmVmIjogMCwNCgkJInJldHVybiI6ICJyZXN1bHRzX3BhZ2UiLA0KCQkicmV0dXJuX2xvY2F0aW9uIjogInNhbWUiLA0KCQkiZmFjZXQiOiAxLA0KCQkidHlwZSI6IDEsDQoJCSJyZWRpcmVjdF91cmwiOiAiP3M9e3BocmFzZX0iLA0KCQkiZGVsYXkiOiAzMDANCgl9LA0KICAgICJhbmltYXRpb25zIjogew0KICAgICAgICAicGMiOiB7DQogICAgICAgICAgICAic2V0dGluZ3MiOiB7DQogICAgICAgICAgICAgICAgImFuaW0iIDogImZhZGVkcm9wIiwNCiAgICAgICAgICAgICAgICAiZHVyIiAgOiAzMDANCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICAicmVzdWx0cyIgOiB7DQoJCQkJImFuaW0iIDogImZhZGVkcm9wIiwNCgkJCQkiZHVyIiAgOiAzMDANCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICAiaXRlbXMiIDogInZvaWRhbmltIg0KICAgICAgICB9LA0KICAgICAgICAibW9iIjogew0KICAgICAgICAgICAgInNldHRpbmdzIjogew0KICAgICAgICAgICAgICAgICJhbmltIiA6ICJmYWRlZHJvcCIsDQogICAgICAgICAgICAgICAgImR1ciIgIDogMzAwDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgInJlc3VsdHMiIDogew0KCQkJCSJhbmltIiA6ICJmYWRlZHJvcCIsDQoJCQkJImR1ciIgIDogMzAwDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgIml0ZW1zIiA6ICJ2b2lkYW5pbSINCiAgICAgICAgfQ0KICAgIH0sDQoJImF1dG9wIjogew0KCQkic3RhdGUiOiAiZGlzYWJsZWQiLA0KCQkicGhyYXNlIjogIiIsDQoJCSJjb3VudCI6IDEJfSwNCiAgICAicmVzUGFnZSI6IHsNCiAgICAgICAgInVzZUFqYXgiOiAwLA0KICAgICAgICAic2VsZWN0b3IiOiAiI21haW4iLA0KICAgICAgICAidHJpZ2dlcl90eXBlIjogMSwNCiAgICAgICAgInRyaWdnZXJfZmFjZXQiOiAxLA0KICAgICAgICAidHJpZ2dlcl9tYWduaWZpZXIiOiAwLA0KICAgICAgICAidHJpZ2dlcl9yZXR1cm4iOiAwICAgIH0sDQoJInJlc3VsdHNTbmFwVG8iOiAibGVmdCIsDQogICAgInJlc3VsdHMiOiB7DQogICAgICAgICJ3aWR0aCI6ICJhdXRvIiwNCiAgICAgICAgIndpZHRoX3RhYmxldCI6ICJhdXRvIiwNCiAgICAgICAgIndpZHRoX3Bob25lIjogImF1dG8iDQogICAgfSwNCgkic2V0dGluZ3NpbWFnZXBvcyI6ICJyaWdodCIsDQoJImNsb3NlT25Eb2NDbGljayI6IDEsDQoJIm92ZXJyaWRld3BkZWZhdWx0IjogMSwNCgkib3ZlcnJpZGVfbWV0aG9kIjogImdldCINCn0NCg=="></div>	<div id="asl_hidden_data">
+		<svg style="position:absolute" height="0" width="0">
+			<filter id="aslblur">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+			</filter>
+		</svg>
+		<svg style="position:absolute" height="0" width="0">
+			<filter id="no_aslblur"></filter>
+		</svg>
+	</div>
+	</div>
+
+	<div id='ajaxsearchliteres1'
+	 class='vertical wpdreams_asl_results asl_w asl_r asl_r_1 asl_r_1_1'>
+
+	
+	<div class="results">
+
+		
+		<div class="resdrg">
+		</div>
+
+		
+	</div>
+
+	
+					<p class='showmore'>
+			<span>More results...</span>
+		</p>
+			
+</div>
+
+	<div id='__original__ajaxsearchlitesettings1'
+		 data-id="1"
+		 class="searchsettings wpdreams_asl_settings asl_w asl_s asl_s_1">
+		<form name='options'
+	  aria-label="Search settings form"
+	  autocomplete = 'off'>
+
+	
+	
+	<input type="hidden" name="filters_changed" style="display:none;" value="0">
+	<input type="hidden" name="filters_initial" style="display:none;" value="1">
+
+	<div class="asl_option_inner hiddend">
+		<input type='hidden' name='qtranslate_lang' id='qtranslate_lang1'
+			   value='0'/>
+	</div>
+
+	
+	
+	<fieldset class="asl_sett_scroll">
+		<legend style="display: none;">Generic selectors</legend>
+		<div class="asl_option" tabindex="0">
+			<div class="asl_option_inner">
+				<input type="checkbox" value="exact"
+					   aria-label="Exact matches only"
+					   name="asl_gen[]" />
+				<div class="asl_option_checkbox"></div>
+			</div>
+			<div class="asl_option_label">
+				Exact matches only			</div>
+		</div>
+		<div class="asl_option" tabindex="0">
+			<div class="asl_option_inner">
+				<input type="checkbox" value="title"
+					   aria-label="Search in title"
+					   name="asl_gen[]"  checked="checked"/>
+				<div class="asl_option_checkbox"></div>
+			</div>
+			<div class="asl_option_label">
+				Search in title			</div>
+		</div>
+		<div class="asl_option" tabindex="0">
+			<div class="asl_option_inner">
+				<input type="checkbox" value="content"
+					   aria-label="Search in content"
+					   name="asl_gen[]"  checked="checked"/>
+				<div class="asl_option_checkbox"></div>
+			</div>
+			<div class="asl_option_label">
+				Search in content			</div>
+		</div>
+		<div class="asl_option_inner hiddend">
+			<input type="checkbox" value="excerpt"
+				   aria-label="Search in excerpt"
+				   name="asl_gen[]"  checked="checked"/>
+			<div class="asl_option_checkbox"></div>
+		</div>
+	</fieldset>
+	<fieldset class="asl_sett_scroll">
+		<legend style="display: none;">Post Type Selectors</legend>
+					<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="post"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+						<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="page"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+						<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="rutgers-groups"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+						<div class="asl_option_inner hiddend">
+				<input type="checkbox" value="rutgers-people"
+					   aria-label="Hidden option, ignore please"
+					   name="customset[]" checked="checked"/>
+			</div>
+				</fieldset>
+	
+		<fieldset>
+							<legend>Filter by Categories</legend>
+						<div class='categoryfilter asl_sett_scroll'>
+				
+			</div>
+		</fieldset>
+		</form>
+	</div>
+</div>                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<a id="main-content"></a>
+  <div class="wrap"
+    role="document">
+    <div class="content ">
+
+      
+      <main class=" ">
+        <h1 class="sr-only">Homepage</h1>
+<div class="stage" style="background: #222;">
+	  <!--  name the class based on if the banner repeater has 1 slide or more-->
+  <div class="banners owl-carousel  ">
+
+    
+                            <div class="banner-wrapper item custom-content"
+                             style="background:url(https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2024/04/DSCF0297-263-e1712262185394.jpg) center center/cover no-repeat;">
+                            <div class="header-banner" style="background: rgba(0,0,0,0.4);">
+                                <div class="container">
+									                                </div>
+                            </div>
+                        </div>
+						                        <div class="banner-wrapper item custom-content"
+                             style="background:url(https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2021/09/memlab.jpg) center center/cover no-repeat;">
+                            <div class="header-banner" style="background: rgba(0,0,0,0.4);">
+                                <div class="container">
+									                                </div>
+                            </div>
+                        </div>
+						    </div>
+</div>
+  <div class="cta-wrapper">
+    <div class="container">
+      <div class="row align-items-center">
+                <div class="col-12 col-md-12">
+          <h6></h6>
+        </div>
+              </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cb-content container"><div class="cb-row transparent" style="">
+        <div class="container content-builder-module-container">
+<div class="row">
+    <div class="col-sm-12">
+		<h5><span style="font-weight: 400">Humans live a cognitively constrained existence. At any one time, we can only choose from a small set of cognitive operations and process a fraction of our experiences. Nevertheless,  our memory system demonstrates remarkable adaptability in navigating a complex and partially known world. What are the exact forms of the cognitive constraints in memory and their neural basis? How does our memory system optimize its performance within these constraints? Our lab combines computational modeling, behavioral methods, and neural imaging to address these questions.</span></h5>
+<p>&nbsp;</p>
+<h5><span style="font-weight: 400">U</span><span style="font-weight: 400">nderstanding the mechanisms behind optimal memory provides a theoretical framework for explaining why memory succeeds in some instances or individuals but fails in others, and makes it possible in future work to devise targeted interventions to enhance memory. Moreover, by elucidating how humans optimally encode and retrieve information, as implemented in mathematically transparent theories, we can potentially inform the design and provide better understanding of AI systems that rely on intelligent use of memory. </span></h5>
+<p>&nbsp;</p>
+<h5><span style="font-weight: 400">We are grateful for the funding support from the National Science Foundation and Rutgers Brain Health Institute.</span> <br style="font-weight: 400" /><br style="font-weight: 400" /></h5>
+    </div>
+</div>
+    </div>
+    </div>
+
+</div>  </div>
+      </main><!-- /.main -->
+    </div><!-- /.content -->
+  </div><!-- /.wrap -->
+  <footer class="content-info">
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 order-4 order-sm-1">
+					
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 order-3 order-sm-2">
+					
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 order-2 order-sm-3">
+					                </div>
+                <div class="col-12 col-sm-6 col-md-3 order-1 order-sm-4">
+                    <div class="logo-rutgers">
+                        <a class="brand" href="https://sites.rutgers.edu/memory-optimization-lab/" aria-label="Go to Memory Optimization Lab homepage">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.38 60">
+  <path style="fill: #cd0533"
+        d="m48.28,31.28l.95-.36c7.91-2.98,11.75-7.48,11.75-13.77,0-4.35-1.74-7.9-5.32-10.85-3.79-3.07-9-4.63-15.49-4.63,0,0-37.05,0-38.61,0v8.21c.24,0,1.96,0,4.5,0v40.26H1.57v8.19h26.33v-8.19h-4.65v-17.35h9.55l10.92,17.35h-6.14v8.19h28.51v-8.19h-5.39l-12.42-18.87Zm-7.52-8.66l-.02.02c-2.03,1.59-5.03,2.39-8.91,2.39h-8.56v-15.14c5.84,0,10.56,0,10.56,0,3.3,0,5.87.93,7.62,2.73,1.28,1.26,1.92,2.86,1.92,4.75,0,2.03-.88,3.8-2.6,5.25h0Z"/>
+  <g style="fill: white">
+    <path d="m33.82,9.89h-10.56s0,15.14,0,15.14h8.57c3.88,0,6.88-.81,8.91-2.39l.02-.02c1.73-1.45,2.6-3.22,2.6-5.25,0-1.89-.65-3.48-1.92-4.75-1.75-1.81-4.32-2.73-7.62-2.73h0Zm5.96,11.52h0c-1.75,1.37-4.43,2.07-7.95,2.07h-7.01v-12.03h9.01c2.86,0,5.05.76,6.5,2.26l.02.02c.98.98,1.46,2.17,1.46,3.64,0,1.56-.66,2.88-2.02,4.04h0Z"/>
+    <path d="m61.54,48.59l-10.89-16.55c7.9-3.21,11.9-8.21,11.9-14.89,0-4.84-1.92-8.78-5.89-12.05C52.57,1.8,47.03.13,40.18.13H.01S.01,11.44.01,11.44h4.5v37.16H.01v11.31h29.45v-11.31h-4.65v-14.23h7.13l8.96,14.23h-4.88v11.31h31.63v-11.31h-6.11Zm4.55,9.75h-28.51v-8.19h6.14l-10.92-17.35h-9.55v17.35h4.65v8.19H1.57v-8.19h4.5V9.89H1.57V1.68h38.61c6.49,0,11.7,1.56,15.49,4.63,3.58,2.95,5.32,6.49,5.32,10.84,0,6.28-3.84,10.79-11.75,13.77l-.95.36,12.42,18.87h5.39v8.19Z"/>
+  </g>
+  <rect x="78.96" y=".12" width="1.56" height="59.78" style="fill: white"/>
+  <g style="fill: white">
+    <path d="m101.55,40.07c-.77-1.32-1.09-1.87-1.87-3.27-1.98-3.59-2.58-4.56-3.3-4.88-.2-.09-.37-.14-.63-.17v8.32h-3.93v-19.94h7.43c3.53,0,5.85,2.35,5.85,5.85,0,2.98-1.98,5.45-4.45,5.51.4.32.57.49.83.83,1.03,1.29,4.08,6.49,4.79,7.75h-4.73Zm-2.09-16.44c-.46-.17-1.29-.29-2.27-.29h-1.43v5.4h1.35c1.72,0,2.47-.17,3.01-.66.49-.46.77-1.18.77-2.01,0-1.23-.49-2.09-1.43-2.44Z"/>
+    <path d="m122.1,36.68c-.52,1.58-2.47,3.76-6.77,3.76-3.04,0-5.28-.92-6.4-2.67-.66-1.03-.86-1.84-.86-3.76v-13.89h4.1v13.11c0,1.23.11,1.95.34,2.38.46.89,1.41,1.38,2.73,1.38,1.75,0,2.87-.86,3.04-2.32.06-.43.06-.72.06-1.78v-12.77h4.08v13.43c0,1.89-.03,2.27-.32,3.13Z"/>
+    <path d="m138.15,23.46h-4.76v16.62h-4.07v-16.62h-4.88v-3.33h14.38l-.66,3.33Z"/>
+    <path d="m147.77,40.3c-2.98,0-5.19-.98-6.8-3.04-1.46-1.87-2.12-3.99-2.12-6.97,0-4.22,1.38-7.2,4.16-9.07,1.46-.98,2.96-1.41,4.85-1.41,2.41,0,4.59.77,6.34,2.3l-2.12,2.5c-1.29-1.06-2.64-1.55-4.16-1.55-1.18,0-2.18.34-2.87,1-1.35,1.29-1.69,3.44-1.69,6.43s.49,4.68,1.49,5.68c.75.72,1.84,1.12,3.13,1.12.89,0,1.61-.14,2.27-.49v-4.53h-3.04l-.52-3.27h7.72v9.53c-2.04,1.21-4.28,1.78-6.63,1.78Z"/>
+    <path d="m157.35,40.07v-19.94h11.36l-.52,3.27h-6.77v4.62h5.65v3.27h-5.65v5.34h7.55v3.44h-11.62Z"/>
+    <path d="m181.22,40.07c-.77-1.32-1.09-1.87-1.87-3.27-1.98-3.59-2.58-4.56-3.3-4.88-.2-.09-.37-.14-.63-.17v8.32h-3.93v-19.94h7.43c3.53,0,5.85,2.35,5.85,5.85,0,2.98-1.98,5.45-4.45,5.51.4.32.57.49.83.83,1.03,1.29,4.08,6.49,4.79,7.75h-4.73Zm-2.09-16.44c-.46-.17-1.29-.29-2.27-.29h-1.43v5.4h1.35c1.72,0,2.47-.17,3.01-.66.49-.46.77-1.18.77-2.01,0-1.23-.49-2.09-1.43-2.44Z"/>
+    <path d="m193.41,40.5c-2.27,0-4.79-.66-6.8-1.81l1.49-3.13c1.87.98,3.47,1.61,5.48,1.61,2.3,0,3.5-.95,3.5-2.73,0-1.29-.83-2.09-2.61-2.58l-2.21-.6c-1.98-.55-3.21-1.32-3.93-2.53-.55-.89-.83-1.92-.83-3.04,0-3.64,2.93-6.17,7.15-6.17,2.44,0,4.91.75,6.66,2.01l-1.89,2.87c-1.81-1.09-3.16-1.52-4.65-1.52-1.64,0-2.78.95-2.78,2.3,0,1.03.55,1.55,2.21,2.01l2.41.66c3.27.89,5.05,2.98,5.05,5.94,0,4.05-3.27,6.72-8.24,6.72Z"/>
+  </g>
+</svg>
+                        </a>
+                    </div>
+
+                    <div class="contact-info text-left">
+                        <p>
+
+															Memory Optimization Lab                                <br>
+								Psychology Building<br />
+Busch Campus<br />
+152 Frelinghuysen Road<br />
+Piscataway, NJ 08854-8020							                        <p>
+																					                        </p>
+						                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sub-footer">
+    <div class="container text-center">
+        <p><a href="mailto:sites-at-rutgers@oit.rutgers.edu">Contact Webmaster</a><span
+                    class="accessibility-notice-js"> | <a href="#" data-toggle="modal"
+                                                          data-target="#accessibilityModal"
+                                                          class="accessibility-notice-link">Accessibility</a></span>
+        </p>
+        <p class="accessibility-notice-no-js">Rutgers is an equal access/equal opportunity institution. Individuals
+            with disabilities are encouraged to direct suggestions, comments, or complaints concerning any
+            accessibility issues with Rutgers web sites to <a href="mailto:accessibility@rutgers.edu">accessibility@rutgers.edu</a>
+            or complete the <a href="https://accessibility.rutgers.edu/barrierform">Report Accessibility Barrier or
+                Provide Feedback Form</a>.</p>
+        <p>Copyright ©2025</a>, <a href="https://www.rutgers.edu/copyright-information">Rutgers, The State University of
+                New Jersey</a></p>
+    </div>
+</div>
+
+<div class="modal fade" id="accessibilityModal" tabindex="-1" role="dialog"
+     aria-labelledby="accessibilityModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accessibilityModalTitle">Accessibility Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Rutgers is an equal access/equal opportunity institution. Individuals with disabilities are
+                    encouraged to direct suggestions, comments, or complaints concerning any accessibility issues
+                    with Rutgers web sites to <a
+                            href="mailto:accessibility@rutgers.edu">accessibility@rutgers.edu</a> or complete the <a
+                            href="https://accessibility.rutgers.edu/barrierform">Report Accessibility Barrier or
+                        Provide Feedback Form</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</footer>
+<!-- AddThis Sharing Script -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a956c310454803e"></script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-includes/js/admin-bar.min.js?ver=6.6.2" id="admin-bar-js"></script>
+<script type="text/javascript" id="wd-asl-ajaxsearchlite-js-before">
+/* <![CDATA[ */
+window.ASL = typeof window.ASL !== 'undefined' ? window.ASL : {}; window.ASL.wp_rocket_exception = "DOMContentLoaded"; window.ASL.ajaxurl = "https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-admin\/admin-ajax.php"; window.ASL.backend_ajaxurl = "https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-admin\/admin-ajax.php"; window.ASL.js_scope = "jQuery"; window.ASL.asl_url = "https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/"; window.ASL.detect_ajax = 1; window.ASL.media_query = 4765; window.ASL.version = 4765; window.ASL.pageHTML = ""; window.ASL.additional_scripts = [{"handle":"wd-asl-ajaxsearchlite","src":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-prereq.js","prereq":[]},{"handle":"wd-asl-ajaxsearchlite-core","src":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-core.js","prereq":[]},{"handle":"wd-asl-ajaxsearchlite-settings","src":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-settings.js","prereq":["wd-asl-ajaxsearchlite"]},{"handle":"wd-asl-ajaxsearchlite-vertical","src":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-results-vertical.js","prereq":["wd-asl-ajaxsearchlite"]},{"handle":"wd-asl-ajaxsearchlite-autocomplete","src":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-autocomplete.js","prereq":["wd-asl-ajaxsearchlite"]},{"handle":"wd-asl-ajaxsearchlite-load","src":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/js\/min\/plugin\/optimized\/asl-load.js","prereq":["wd-asl-ajaxsearchlite-autocomplete"]}]; window.ASL.script_async_load = false; window.ASL.init_only_in_viewport = true; window.ASL.font_url = "https:\/\/sites.rutgers.edu\/memory-optimization-lab\/wp-content\/plugins\/ajax-search-lite\/css\/fonts\/icons2.woff2"; window.ASL.css_async = false; window.ASL.highlight = {"enabled":false,"data":[]}; window.ASL.analytics = {"method":0,"tracking_id":"","string":"?ajax_search={asl_term}","event":{"focus":{"active":1,"action":"focus","category":"ASL","label":"Input focus","value":"1"},"search_start":{"active":0,"action":"search_start","category":"ASL","label":"Phrase: {phrase}","value":"1"},"search_end":{"active":1,"action":"search_end","category":"ASL","label":"{phrase} | {results_count}","value":"1"},"magnifier":{"active":1,"action":"magnifier","category":"ASL","label":"Magnifier clicked","value":"1"},"return":{"active":1,"action":"return","category":"ASL","label":"Return button pressed","value":"1"},"facet_change":{"active":0,"action":"facet_change","category":"ASL","label":"{option_label} | {option_value}","value":"1"},"result_click":{"active":1,"action":"result_click","category":"ASL","label":"{result_title} | {result_url}","value":"1"}}};
+window.ASL_INSTANCES = [];window.ASL_INSTANCES[1] = {"homeurl":"https:\/\/sites.rutgers.edu\/memory-optimization-lab\/","resultstype":"vertical","resultsposition":"hover","itemscount":4,"charcount":0,"highlight":0,"highlightwholewords":1,"singleHighlight":0,"scrollToResults":{"enabled":0,"offset":0},"resultareaclickable":1,"autocomplete":{"enabled":1,"lang":"en","trigger_charcount":0},"mobile":{"menu_selector":"#menu-toggle"},"trigger":{"click":"ajax_search","click_location":"same","update_href":0,"return":"results_page","return_location":"same","facet":1,"type":1,"redirect_url":"?s={phrase}","delay":300},"animations":{"pc":{"settings":{"anim":"fadedrop","dur":300},"results":{"anim":"fadedrop","dur":300},"items":"voidanim"},"mob":{"settings":{"anim":"fadedrop","dur":300},"results":{"anim":"fadedrop","dur":300},"items":"voidanim"}},"autop":{"state":"disabled","phrase":"","count":1},"resPage":{"useAjax":0,"selector":"#main","trigger_type":1,"trigger_facet":1,"trigger_magnifier":0,"trigger_return":0},"resultsSnapTo":"left","results":{"width":"auto","width_tablet":"auto","width_phone":"auto"},"settingsimagepos":"right","closeOnDocClick":1,"overridewpdefault":1,"override_method":"get"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-prereq.js?ver=4765" id="wd-asl-ajaxsearchlite-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-core.js?ver=4765" id="wd-asl-ajaxsearchlite-core-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-settings.js?ver=4765" id="wd-asl-ajaxsearchlite-settings-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-results-vertical.js?ver=4765" id="wd-asl-ajaxsearchlite-vertical-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-autocomplete.js?ver=4765" id="wd-asl-ajaxsearchlite-autocomplete-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-load.js?ver=4765" id="wd-asl-ajaxsearchlite-load-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/plugins/ajax-search-lite/js/min/plugin/optimized/asl-wrapper.js?ver=4765" id="wd-asl-ajaxsearchlite-wrapper-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/themes/rusites/dist/scripts/main.js" id="sage/js-js"></script>
+<script type="text/javascript" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/themes/rusites/dist/scripts/accessibility.js" id="sage/accessibility-js-js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	
+/* ]]> */
+</script>
+		<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu"><li role='group' id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='About WordPress' id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li role='group' id='wp-admin-bar-about'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/about.php'>About WordPress</a></li><li role='group' id='wp-admin-bar-contribute'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/contribute.php'>Get Involved</a></li></ul><ul role='menu' aria-label='About WordPress' id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li role='group' id='wp-admin-bar-wporg'><a class='ab-item' role="menuitem" href='https://wordpress.org/'>WordPress.org</a></li><li role='group' id='wp-admin-bar-documentation'><a class='ab-item' role="menuitem" href='https://wordpress.org/documentation/'>Documentation</a></li><li role='group' id='wp-admin-bar-learn'><a class='ab-item' role="menuitem" href='https://learn.wordpress.org/'>Learn WordPress</a></li><li role='group' id='wp-admin-bar-support-forums'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forums/'>Support</a></li><li role='group' id='wp-admin-bar-feedback'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li role='group' id='wp-admin-bar-my-sites' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/wp-admin/my-sites.php'>My Sites</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-my-sites-list' class="ab-submenu"><li role='group' id='wp-admin-bar-blog-1' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>Sites@Rutgers</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-blog-1-default' class="ab-submenu"><li role='group' id='wp-admin-bar-blog-1-d'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/wp-admin/'>Dashboard</a></li><li role='group' id='wp-admin-bar-blog-1-v'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/'>Visit Site</a></li></ul></div></li><li role='group' id='wp-admin-bar-blog-717' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><img class="blavatar" src="https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2018/01/android-chrome-192x192-150x150.png" srcset="https://sites.rutgers.edu/memory-optimization-lab/wp-content/uploads/sites/717/2018/01/android-chrome-192x192-150x150.png 2x" alt="" width="16" height="16" loading="lazy" />Memory Optimization Lab</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-blog-717-default' class="ab-submenu"><li role='group' id='wp-admin-bar-blog-717-d'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/'>Dashboard</a></li><li role='group' id='wp-admin-bar-blog-717-n'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php'>New Post</a></li><li role='group' id='wp-admin-bar-blog-717-v'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/'>Visit Site</a></li></ul></div></li></ul></div></li><li role='group' id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/'>Memory Optimization Lab</a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Memory Optimization Lab' id='wp-admin-bar-site-name-default' class="ab-submenu"><li role='group' id='wp-admin-bar-dashboard'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/'>Dashboard</a></li></ul><ul role='menu' aria-label='Memory Optimization Lab' id='wp-admin-bar-appearance' class="ab-submenu"><li role='group' id='wp-admin-bar-widgets'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/widgets.php'>Widgets</a></li><li role='group' id='wp-admin-bar-menus'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/nav-menus.php'>Menus</a></li></ul></div></li><li role='group' id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/customize.php?url=https%3A%2F%2Fsites.rutgers.edu%2Fmemory-optimization-lab%2F'>Customize</a></li><li role='group' id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='New' id='wp-admin-bar-new-content-default' class="ab-submenu"><li role='group' id='wp-admin-bar-new-post'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php'>Post</a></li><li role='group' id='wp-admin-bar-new-media'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/media-new.php'>Media</a></li><li role='group' id='wp-admin-bar-new-page'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php?post_type=page'>Page</a></li><li role='group' id='wp-admin-bar-new-tribe_events'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php?post_type=tribe_events'>Event</a></li><li role='group' id='wp-admin-bar-new-rutgers-people'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php?post_type=rutgers-people'>Person</a></li></ul></div></li><li role='group' id='wp-admin-bar-edit'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post.php?post=487&#038;action=edit'>Edit Page</a></li><li role='group' id='wp-admin-bar-clear-page-cache'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/admin-ajax.php?action=pantheon_clear_url_cache&#038;path=%2Fmemory-optimization-lab%2F&#038;_wpnonce=a3b946fbb0' title='Delete cache of the current URL.'>Clear URL Cache</a></li><li role='group' id='wp-admin-bar-tribe-events' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/events/'><div id="tec-events-ab-icon" class="ab-item tec-events-logo svg"></div>Events</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-tribe-events-group' class="ab-submenu"><li role='group' id='wp-admin-bar-tribe-events-view-calendar'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/events/'>View Calendar</a></li><li role='group' id='wp-admin-bar-tribe-events-add-event'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/post-new.php?post_type=tribe_events'>Add Event</a></li><li role='group' id='wp-admin-bar-tribe-events-edit-events'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/edit.php?post_type=tribe_events'>Edit Events</a></li></ul><div id="wp-admin-bar-tribe-events-add-ons-group-container" class="ab-group-container"><ul role='menu' id='wp-admin-bar-tribe-events-import-group' class="ab-submenu"><li role='group' id='wp-admin-bar-tribe-events-import' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/edit.php?post_type=tribe_events&#038;page=aggregator'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Import</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-tribe-events-import-default' class="ab-submenu"><li role='group' id='wp-admin-bar-tribe-aggregator-import-csv'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/edit.php?page=aggregator&#038;post_type=tribe_events&#038;ea-origin=csv'>CSV File</a></li></ul></div></li></ul></div></div></li></ul><ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li role='group' id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/profile.php'>Howdy, <span class="display-name">Qiong Zhang</span><img alt='' src='https://secure.gravatar.com/avatar/3442f1e6a693146b0615742c6fa99ced?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3442f1e6a693146b0615742c6fa99ced?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy' decoding='async'/></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Howdy, Qiong Zhang' id='wp-admin-bar-user-actions' class="ab-submenu"><li role='group' id='wp-admin-bar-user-info'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/3442f1e6a693146b0615742c6fa99ced?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3442f1e6a693146b0615742c6fa99ced?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy' decoding='async'/><span class='display-name'>Qiong Zhang</span><span class='username'>qz180</span><span class='display-name edit-profile'>Edit Profile</span></a></li><li role='group' id='wp-admin-bar-logout'><a class='ab-item' role="menuitem" href='https://sites.rutgers.edu/memory-optimization-lab/wp-login.php?action=logout&#038;_wpnonce=e891752210'>Log Out</a></li></ul></div></li><li role='group' id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1" role="menuitem"><form action="https://sites.rutgers.edu/memory-optimization-lab/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search" /></form></div></li></ul>			</div>
+		</div>
+
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a852971bae","applicationID":"205519541","transactionName":"YFJRY0BQVkdUVEdbV1kYZkVbHhddW1NWShZHX0M=","queueTime":0,"applicationTime":341,"atts":"TBVSFQhKRUk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>
